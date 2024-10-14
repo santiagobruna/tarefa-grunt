@@ -1,0 +1,62 @@
+@import 'variables.less';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: @fonte;
+    color: @corDoTexto;
+    background-color: @corDeFundo;
+}
+main {
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 960px;
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 24px 20px;
+    background-color: @corDeFundoPrincipal;
+}
+
+.container-image {
+    img {
+        max-width: 300px;
+        width: 100%;
+        transition: all 2s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.container-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    form {
+        input{
+            padding: 13px;
+            display: block;
+            margin: 2rem 0;
+        }
+        label {
+            font-size: 1.5em;
+        }
+        button {
+            cursor: pointer;
+            border: none;
+            border: 1px solid #fff;
+            background-color: @corDoButao;
+            padding: 14px;
+            font-weight: bold;
+            font-family: @fonte;
+            color: @corDoTexto;
+        }
+    }
+}
